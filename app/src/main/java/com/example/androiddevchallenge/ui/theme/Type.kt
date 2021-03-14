@@ -17,27 +17,55 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
+import com.example.androiddevchallenge.R
 
-// Set of Material typography styles to start with
+val nunitoSansFamily = FontFamily(
+    Font(R.font.nunitosans_light, FontWeight.Light),
+    Font(R.font.nunitosans_semibold, FontWeight.SemiBold),
+    Font(R.font.nunitosans_bold, FontWeight.Bold),
+)
+
 val typography = Typography(
+    h1 = TextStyle(
+        fontFamily = nunitoSansFamily,
+        fontWeight = FontWeight.Bold,
+        fontSize = 18.sp,
+    ),
+    h2 = TextStyle(
+        fontFamily = nunitoSansFamily,
+        fontWeight = FontWeight.Bold,
+        letterSpacing = 0.15.em,
+        fontSize = 14.sp,
+    ),
+    subtitle1 = TextStyle(
+        fontFamily = nunitoSansFamily,
+        fontWeight = FontWeight.Light,
+        fontSize = 16.sp,
+    ),
     body1 = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
-    )
-        /* Other default text styles to override
+        fontFamily = nunitoSansFamily,
+        fontWeight = FontWeight.Light,
+        fontSize = 14.sp,
+    ),
+    body2 = TextStyle(
+        fontFamily = nunitoSansFamily,
+        fontWeight = FontWeight.Light,
+        fontSize = 12.sp,
+    ),
     button = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.W500,
-        fontSize = 14.sp
+        fontFamily = nunitoSansFamily,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 14.sp,
+        letterSpacing = 0.1.em,
     ),
     caption = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 12.sp
-    )
-    */
+        fontFamily = nunitoSansFamily,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 12.sp,
+    ),
 )
