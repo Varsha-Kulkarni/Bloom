@@ -52,7 +52,6 @@ import androidx.compose.material.icons.filled.FilterList
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.ShoppingCart
-import androidx.compose.material.icons.outlined.Favorite
 import androidx.compose.material.icons.outlined.FavoriteBorder
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -238,7 +237,7 @@ fun DesignGardenItem(item: GardenItem) {
         modifier = Modifier
             .fillMaxWidth(),
     ) {
-        Log.i(" ","${item.imageResource}")
+        Log.i(" ", "${item.imageResource}")
         Image(
             painterResource(item.imageResource),
             contentDescription = null,
